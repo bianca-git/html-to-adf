@@ -4,7 +4,6 @@
     "description": "",
     "main": "./src/app.js",
     "scripts": {
-        "build": "npm install",
         "start": "node ./src/app.js",
         "dev": "nodemon ./src/app.js",
         "clean": "rm -rf node_modules dist build",
@@ -16,13 +15,9 @@
     "dependencies": {
         "dotenv": "^10.0.0",
         "express": "^4.17.1",
-        "fs": "0.0.1-security",
-        "htmltoadf": "^0.1.8",
-        "path": "^0.12.7",
-        "util": "^0.12.4"
+        "htmltoadf": "^0.1.8"
     },
     "devDependencies": {
-        "@flydotio/dockerfile": "^0.4.10",
         "nodemon": "^3.0.1"
     }
 }
