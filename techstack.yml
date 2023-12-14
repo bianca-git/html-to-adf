@@ -1,11 +1,11 @@
 repo_name: bianca-git/html-to-adf
-report_id: 8d128b84c1f78aa770c0946ddcd10a69
+report_id: 77984019261423db36d6949335eb7e62
 repo_type: Public
-timestamp: '2023-11-30T16:50:15+00:00'
+timestamp: '2023-12-14T13:24:48+00:00'
 requested_by: bianca-git
 provider: github
 branch: main
-detected_tools_count: 14
+detected_tools_count: 12
 tools:
 - name: CSS 3
   description: The latest evolution of the Cascading Style Sheets language
@@ -37,32 +37,21 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/1163/hashtag.png
-  detection_source_url: github.com/bianca-git/html-to-adf/blob/main/package-lock.json
+  detection_source_url: https://github.com/bianca-git/html-to-adf/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Bianca W
   last_updated_on: 2023-11-04 11:27:26.000000000 Z
-- name: Node.js
-  description: A platform built on Chrome's JavaScript runtime for easily building
-    fast, scalable network applications
-  website_url: http://nodejs.org/
-  open_source: true
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
   hosted_saas: false
-  category: Languages & Frameworks
-  sub_category: Frameworks (Full Stack)
-  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
-  detection_source: Dockerfile
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source: src/date.txt
   last_updated_by: Bianca W
-  last_updated_on: 2023-11-04 13:10:56.000000000 Z
-- name: Docker
-  description: Enterprise Container Platform for High-Velocity Innovation.
-  website_url: https://www.docker.com/
-  license: Apache-2.0
-  open_source: true
-  hosted_saas: false
-  category: Build, Test, Deploy
-  sub_category: Virtual Machine Platforms & Containers
-  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
-  detection_source: Repo Metadata
+  last_updated_on: 2023-11-04 11:27:26.000000000 Z
 - name: Dotenv
   description: Loads environment variables from .env for Nodejs projects
   website_url: https://github.com/motdotla/dotenv
@@ -84,6 +73,17 @@ tools:
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
   detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source: ".github/workflows/main_html-to-adf.yml"
+  last_updated_by: Bianca W
+  last_updated_on: 2023-12-02 17:35:58.000000000 Z
 - name: nodemon
   description: A simple monitor script for use during development of a node.js app
   website_url: http://nodemon.io/
@@ -94,7 +94,7 @@ tools:
   category: Monitoring
   sub_category: node.js Application Monitoring
   image_url: https://img.stackshare.io/service/5577/preview.png
-  detection_source_url: github.com/bianca-git/html-to-adf/blob/main/package-lock.json
+  detection_source_url: https://github.com/bianca-git/html-to-adf/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Bianca W
   last_updated_on: 2023-11-04 11:27:26.000000000 Z
@@ -118,6 +118,17 @@ tools:
   detection_source: src/index.html
   last_updated_by: Bianca W
   last_updated_on: 2023-11-04 11:27:26.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source: src/date.txt
+  last_updated_by: Bianca W
+  last_updated_on: 2023-11-04 11:27:26.000000000 Z
 - name: express
   description: Fast, unopinionated, minimalist web framework
   package_url: https://www.npmjs.com/express
@@ -128,50 +139,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: github.com/bianca-git/html-to-adf/blob/main/package-lock.json
-  detection_source: package.json
-  last_updated_by: Bianca W
-  last_updated_on: 2023-11-04 11:27:26.000000000 Z
-- name: fs
-  description: This package name is not currently in use, but was formerly occupied
-    by another package
-  package_url: https://www.npmjs.com/fs
-  version: 0.0.1
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/16098/default_63a34654baee757196ddff2457bd1c9a0dfb7287.png
-  detection_source_url: github.com/bianca-git/html-to-adf/blob/main/package-lock.json
-  detection_source: package.json
-  last_updated_by: Bianca W
-  last_updated_on: 2023-11-04 11:27:26.000000000 Z
-- name: path
-  description: Node.JS path module
-  package_url: https://www.npmjs.com/path
-  version: 0.12.7
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/16082/default_924b66c04aa848a4028c1a5753a23dae0f835f86.png
-  detection_source_url: github.com/bianca-git/html-to-adf/blob/main/package-lock.json
-  detection_source: package.json
-  last_updated_by: Bianca W
-  last_updated_on: 2023-11-04 11:27:26.000000000 Z
-- name: util
-  description: Node.js's util module for all engines
-  package_url: https://www.npmjs.com/util
-  version: 0.10.4
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/16507/default_55f3303d620c93eecbee69c43373d484f2be492f.png
-  detection_source_url: github.com/bianca-git/html-to-adf/blob/main/package-lock.json
+  detection_source_url: https://github.com/bianca-git/html-to-adf/blob/main/package-lock.json
   detection_source: package.json
   last_updated_by: Bianca W
   last_updated_on: 2023-11-04 11:27:26.000000000 Z
